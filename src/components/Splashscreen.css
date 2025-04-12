@@ -1,0 +1,35 @@
+.splashscreen-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Set the background color (e.g., black) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it appears above all other content */
+  }
+  
+  .splashscreen-logo {
+    max-width: 200px; /* Adjust the size of the logo */
+    max-height: 200px;
+    object-fit: contain;
+    animation: pulsate 1.5s infinite; /* Add pulsating animation */
+  }
+  
+  /* Pulsating animation */
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

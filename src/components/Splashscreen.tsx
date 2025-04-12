@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // Replace with the path to your logo image
+import logo from '../assets/logo2.png'; // Replace with the path to your logo image
 import './Splashscreen.css'; // Import the CSS file for styling
 
 const Splashscreen: React.FC = () => {
