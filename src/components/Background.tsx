@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
-import screamRevealImage from '../assets/Scream reyeal.png'; // Import the image
+import { Link } from 'react-router-dom';
+import screamRevealImage from '../assets/Scream reyeal.png';
 
 const Background: React.FC = () => {
   return (
@@ -8,42 +8,46 @@ const Background: React.FC = () => {
       style={{
         width: '100vw',
         height: '100vh',
-        backgroundImage: `url(${screamRevealImage})`, // Set the background image
-        backgroundSize: 'cover', // Ensure the image covers the entire container
-        backgroundPosition: 'center', // Center the image
-        backgroundRepeat: 'no-repeat', // Prevent tiling
+        backgroundImage: `url(${screamRevealImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         display: 'flex',
-        flexDirection: 'column', // Stack content vertically
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '20px', // Add padding for better readability
-        textAlign: 'center', // Center-align the text
-        color: '#fff', // Ensure the text is readable on the background
+        padding: '20px',
+        textAlign: 'center',
+        color: '#fff',
       }}
     >
-      {/* Gray container for the paragraph */}
       <div 
         style={{
-          backgroundColor: 'rgba(128, 128, 128, 0.8)', // Gray background with transparency
-          borderRadius: '10px', // Rounded corners
-          padding: '30px', // Padding inside the container
-          maxWidth: '900px', // Limit the width of the container
-          textAlign: 'justify', // Justify the text for better readability
-          color: '#fff', // Ensure the text is readable
+          backgroundColor: 'rgba(128, 128, 128, 0.8)',
+          borderRadius: '10px',
+          padding: '30px',
+          maxWidth: '900px',
+          textAlign: 'justify',
+          color: '#fff',
         }}
       >
         <p 
           style={{ 
-            lineHeight: '1.6', // Improve text spacing
-            margin: 0, // Remove default margin
+            lineHeight: '1.6',
+            margin: 0,
           }}
         >
-          This project is a digital research platform created to explore the intersection of cultural identity, fashion, and the global influence of Black culture—specifically through the lens of Sri Lankan boys, boys of African descent, and biracial Sri Lankan boys aged 18–25. As part of a final dissertation, this space collects both quantitative and qualitative data while building a community that reflects on the emotional, social, and cultural motivations behind adopting Afrocentric fashion tropes. Through interactive questionnaires and open forum-style focus group discussions, this platform unpacks how Black culture is interpreted, embodied, and reimagined in a Sri Lankan context. It aims to go beyond surface-level aesthetics and uncover the deeper narratives behind identity formation, cultural resonance, and the blurred lines between appreciation and appropriation.
-                     For more information contact me <a href="https://www.instagram.com/screamnyael_official/" target="_blank" rel="noopener noreferrer" style={{ color: '#00acee', textDecoration: 'none' }}>@screamnyael_official</a>.
+          This digital research platform explores the intersection of cultural identity, fashion, and the global influence of Black culture—focusing on Sri Lankan boys, boys of African descent, and biracial Sri Lankan boys aged 18–25. Created as part of a final dissertation, it gathers both quantitative and qualitative data through interactive questionnaires and forum-style discussions. The goal is to understand how Afrocentric fashion is interpreted and embodied in a Sri Lankan context, revealing the emotional, social, and cultural motivations behind these choices, and examining the fine line between appreciation and appropriation.
+        </p>
+        <br />
+        <p style={{ margin: 0 }}>
+          <strong>Contact</strong><br />
+          <strong>Email:</strong> <a href="mailto:rahyael.desilva3127@aod.lk" style={{ color: '#00acee', textDecoration: 'none' }}>rahyael.desilva3127@aod.lk</a><br />
+          <strong>Phone:</strong> <a href="tel:+94701083038" style={{ color: '#00acee', textDecoration: 'none' }}>+94 70 108 3038</a><br />
+          <strong>Instagram:</strong> <a href="https://www.instagram.com/screamnyael_official/" target="_blank" rel="noopener noreferrer" style={{ color: '#00acee', textDecoration: 'none' }}>@screamnyael_official</a>
         </p>
       </div>
 
-      {/* Button to go back to the homepage */}
       <Link to="/">
         <button className="button-54" role="button">Home</button>
       </Link>
