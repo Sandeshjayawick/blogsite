@@ -39,12 +39,13 @@ const Background: React.FC = () => {
           }}
         >
           This project is a digital research platform created to explore the intersection of cultural identity, fashion, and the global influence of Black culture—specifically through the lens of Sri Lankan boys, boys of African descent, and biracial Sri Lankan boys aged 18–25. As part of a final dissertation, this space collects both quantitative and qualitative data while building a community that reflects on the emotional, social, and cultural motivations behind adopting Afrocentric fashion tropes. Through interactive questionnaires and open forum-style focus group discussions, this platform unpacks how Black culture is interpreted, embodied, and reimagined in a Sri Lankan context. It aims to go beyond surface-level aesthetics and uncover the deeper narratives behind identity formation, cultural resonance, and the blurred lines between appreciation and appropriation.
+                     For more information contact me <a href="https://www.instagram.com/screamnyael_official/" target="_blank" rel="noopener noreferrer" style={{ color: '#00acee', textDecoration: 'none' }}>@screamnyael_official</a>.
         </p>
       </div>
 
       {/* Button to go back to the homepage */}
       <Link to="/">
-        <button className="button-54" role="button">Go to Homepage</button>
+        <button className="button-54" role="button">Home</button>
       </Link>
     </div>
   );

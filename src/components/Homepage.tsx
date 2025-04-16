@@ -62,9 +62,7 @@ const Homepage: React.FC = () => {
           <button className="button-54" role="button">Form</button>
         </a>
 
-        {/* Placeholder for Blog button */}
-        <button className="button-54" role="button">Blog</button>
-
+       
         <Link to="/gallery">
           <button className="button-54" role="button">Gallery</button>
         </Link>
