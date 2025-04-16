@@ -1,19 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import homepageImage from '../assets/home.png';
-import './Homepage.css'; // Import the CSS file
+import smallScreenImage from '../images/screen2.png';
+import './Homepage.css';
 
 const Homepage: React.FC = () => {
+  const [backgroundImage, setBackgroundImage] = useState(homepageImage);
+
+  useEffect(() => {
+    // Function to handle screen size changes
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setBackgroundImage(smallScreenImage);
+      } else {
+        setBackgroundImage(homepageImage);
+      }
+    };
+
+    // Set initial image based on screen size
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div 
       className="homepage-container" 
       style={{
-        backgroundImage: `url(${homepageImage})`,
-        backgroundRepeat: 'no-repeat', // Prevents tiling
-        backgroundSize: 'contain', // Ensures the image scales to fit the container
-        backgroundPosition: 'center', // Centers the image
-        width: '100vw', // Full width of the viewport
-        height: '100vh', // Full height of the viewport
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw',
+        height: '100vh',
         margin: 0,
         padding: 0,
         overflow: 'hidden',
