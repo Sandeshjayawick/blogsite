@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Background from './components/Background';
 import Splashscreen from './components/Splashscreen';
-import Footer from './components/Footer'; // Import the Footer component
+import Footer from './components/Footer';
+import Gallery from './components/Gallery'; // Import the Gallery component
 
 const App: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/background" element={<Background />} />
+            <Route path="/gallery" element={<Gallery />} /> {/* Add the Gallery route */}
           </Routes>
           <Footer /> {/* Add the Footer component here */}
         </>

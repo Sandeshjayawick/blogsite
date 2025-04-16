@@ -43,6 +43,11 @@ const Homepage: React.FC<HomepageProps> = () => {
 
         {/* Placeholder for Blog button */}
         <button className="button-54" role="button">Blog</button>
+
+        <Link to="/gallery">
+          <button className="button-54" role="button">Gallery</button>
+        </Link>
+
       </div>
     </div>
   );
