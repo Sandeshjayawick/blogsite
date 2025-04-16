@@ -3,21 +3,17 @@ import { Link } from 'react-router-dom';
 import homepageImage from '../assets/home.png';
 import './Homepage.css'; // Import the CSS file
 
-interface HomepageProps {
-  // You can add any props you need here
-}
-
-const Homepage: React.FC<HomepageProps> = () => {
+const Homepage: React.FC = () => {
   return (
     <div 
       className="homepage-container" 
       style={{
         backgroundImage: `url(${homepageImage})`,
-        backgroundSize: 'cover', // Ensures the image covers the entire container
-        backgroundPosition: 'center', // Centers the image
         backgroundRepeat: 'no-repeat', // Prevents tiling
-        width: '100vw',
-        minHeight: '100vh', // Ensures the container is at least the height of the viewport
+        backgroundSize: 'contain', // Ensures the image scales to fit the container
+        backgroundPosition: 'center', // Centers the image
+        width: '100vw', // Full width of the viewport
+        height: '100vh', // Full height of the viewport
         margin: 0,
         padding: 0,
         overflow: 'hidden',
@@ -47,7 +43,6 @@ const Homepage: React.FC<HomepageProps> = () => {
         <Link to="/gallery">
           <button className="button-54" role="button">Gallery</button>
         </Link>
-
       </div>
     </div>
   );
