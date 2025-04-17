@@ -35,7 +35,12 @@ const Background: React.FC = () => {
         }}
       >
         <p style={{ lineHeight: '1.8', margin: 0, fontSize: '1.0rem' }}>
-          This digital research platform explores the intersection of cultural identity, fashion, and the global influence of Black culture—focusing on Sri Lankan boys, boys of African descent, and biracial Sri Lankan boys aged 18–25. Created as part of a final dissertation, it gathers both quantitative and qualitative data through interactive questionnaires and forum-style discussions. The goal is to understand how Afrocentric fashion is interpreted and embodied in a Sri Lankan context, revealing the emotional, social, and cultural motivations behind these choices, and examining the fine line between appreciation and appropriation.
+  This research platform explores the intersection of cultural identity, fashion, and the global influence of Black culture — focusing on Sri Lankan boys, boys of African descent, and biracial Sri Lankan boys aged 18–25. As part of a final dissertation, it gathers both data and lived experiences through interactive questionnaires and open discussions. The aim is to understand how Afrocentric fashion is expressed in a Sri Lankan context, and to explore the cultural, social, and emotional meaning behind it — while also looking at the line between appreciation and appropriation.
+</p>
+
+        <br />
+        <p style={{ lineHeight: '1.8', margin: 0, fontSize: '1.0rem' }}>
+          A Google Form is now live and urgently needs to be filled out. If you could take a moment and share it widely, it would be a huge help to this important research.
         </p>
         <br />
         <p style={{ margin: 0, fontSize: '1rem' }}>
