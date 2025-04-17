@@ -35,7 +35,7 @@ const Background: React.FC = () => {
         }}
       >
         <p style={{ lineHeight: '1.4', margin: 0, fontSize: '1.0rem' }}>
-  This research platform explores the intersection of cultural identity, fashion, and the global influence of Black culture — focusing on Sri Lankan boys, boys of African descent, and biracial Sri Lankan boys aged 18–25. As part of a final dissertation, it gathers both data and lived experiences through interactive questionnaires and open discussions. The aim is to understand how Afrocentric fashion is expressed in a Sri Lankan context, and to explore the cultural, social, and emotional meaning behind it — while also looking at the line between appreciation and appropriation.
+  This research platform explores the intersection of cultural identity, fashion, and the global influence of Black culture — focusing on Sri Lankan boys, boys of African descent, and biracial Sri Lankan boys aged 18–28. As part of a final dissertation, it gathers both data and lived experiences through interactive questionnaires and open discussions. The aim is to understand how Afrocentric fashion is expressed in a Sri Lankan context, and to explore the cultural, social, and emotional meaning behind it — while also looking at the line between appreciation and appropriation.
 </p>
 
         <br />
