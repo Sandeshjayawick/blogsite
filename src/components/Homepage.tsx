@@ -55,7 +55,7 @@ const Homepage: React.FC = () => {
 
         {/* Link to the Google Form */}
         <a 
-          href="https://docs.google.com/forms/d/1IxVPIchm81OL_R7bBeWWOYK6I9cXw19As0upA23C4yw/edit" 
+          href="https://forms.gle/7tNA97NikCvTfRzg9" 
           target="_blank" 
           rel="noopener noreferrer"
         >
