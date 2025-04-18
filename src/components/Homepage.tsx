@@ -4,6 +4,7 @@ import homepageImage from '../assets/home.png';
 import smallScreenImage from '../images/screen2.png';
 import './Homepage.css';
 
+
 const Homepage: React.FC = () => {
   const [backgroundImage, setBackgroundImage] = useState(homepageImage);
 

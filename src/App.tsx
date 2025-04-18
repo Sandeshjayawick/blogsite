@@ -5,6 +5,7 @@ import Background from './components/Background';
 import Splashscreen from './components/Splashscreen';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery'; // Import the Gallery component
+import { Analytics } from "@vercel/analytics/react"
 
 const App: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -17,6 +18,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
+      <Analytics /> {/* Add Analytics here */}
       {showSplash ? (
         <Splashscreen />
       ) : (
